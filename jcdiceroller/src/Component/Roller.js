@@ -1,17 +1,16 @@
 import React, { Component } from 'react';
 
 export default class Roller extends Component {
-    constructor (props){
-        super (props)
-    }
+   
+    
     render () {
         return (
             <>
-                <button onClick = {this.props.random}>
+            <h1>{this.props.newDiceNumber}</h1>
+                <button onClick = {this.props.randomRoll}>
                 Click to roll
                 </button>
             </>
         )
     }
 }
-
