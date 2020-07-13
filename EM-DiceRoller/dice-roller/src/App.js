@@ -36,7 +36,9 @@ class App extends Component {
 
   //attempt to make restart button
   restartButton = () => {
+    let { currentRoll, previousRolls } = this.state
     let emptyArr = []
+    this.setState({currentRoll: ""})
     this.setState({previousRolls: emptyArr})
   }
   //this renders what we see on the browser
@@ -52,6 +54,9 @@ class App extends Component {
         <Rolls 
           previousRolls = { this.state.previousRolls }
         />
+        <button onClick = { this.restartButton }>
+          Restart
+        </button>
       </div>
     )
   }
