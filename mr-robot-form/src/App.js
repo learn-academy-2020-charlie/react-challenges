@@ -1,21 +1,21 @@
 import React, { Component } from 'react';
-import './App.css';
 import Robot1 from './components/Robot1'
 import Robot2 from './components/Robot2'
 import Robot3 from './components/Robot3'
+import './App.css';
 
 class App extends Component {
   constructor(props){
     super(props)
       this.state = {
-        userInput: "",
-        robot2: ""
+        userInput: ""
       }
   }
 
-  handleChange = (event) => {
-    this.state[event.target.name] = event.target.value
-    this.setState({ userInput: this.state.userInput })
+  handleChange = (e) => {
+    // this.state[e.target.name] = e.target.value
+    // this.setState({ userInput: this.state.userInput })
+    this.setState({ userInput: e.target.value })
   }
 
   render() {
@@ -30,7 +30,7 @@ class App extends Component {
         <Robot1 
         userInput = { this.state.userInput }
         />
-        <Robot2 
+        <Robot2
         userInput = { this.state.userInput }
         />
         <Robot3 

@@ -8,6 +8,7 @@ export default class Log extends Component {
             <>
             <h1>{this.props.newLog2}</h1>
 
+
             </>
         )
     }
