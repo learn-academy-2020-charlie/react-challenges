@@ -2,35 +2,36 @@ import React, { Component } from 'react';
 
 class Robot2 extends Component {
 
-    blah = (string) => {
-        let blah = ["B", "L", "A"]
-        let wordArr = string.split("")
-        let blahIndex = 0
-        let translation = wordArr.map(value => {
-            value = blah[blahIndex]
-            blahIndex++
-            if (blahIndex === 3){
-                blahIndex = 0
-        }
-        
+    badListening = (string) => {
+        let badArray = string.split("").map((value, index) => {
+            if(index % 3 === 0){
+                return "B"
+            } else if (1 % 3 === 1){
+                return "L"
+            } else if (2 % 3 === 2){
+                return "A"
+            }
         })
-        let translationString = translation.join("")
-        console.log(translationString)
-        //     // ["h" ,"e" ,"l" ,"l" ,"o"]
-        // })
-        this.setState({ userInput : translationString })
-
-        // if i % 3
+        return badArray.join("")
     }
 
+  
+
+
+
+
+
+
     render(){
-
-        
-
+    // console.log(this.blah);
         return(
+
             <React.Fragment>
-                <h2>The Bad Robot:</h2>
-                <p> { this.blah(this.props.userInput) } </p>
+                <h2>The Bad Robot: </h2>
+                {/* <p>{this.blah}</p> */}
+                {/* <p> { this.props.userInput } </p> */}
+                <p> { this.badListening (this.props.userInput) } </p>
+
             </React.Fragment>
         )
     }
