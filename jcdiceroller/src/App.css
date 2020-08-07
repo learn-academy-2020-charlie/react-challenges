@@ -1,38 +1,27 @@
-.App {
-  text-align: center;
+
+#button:hover {
+  background-color: #212121; 
+  background-image: url("https://webstockreview.net/images/dice-clipart-number-3-2.png");
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#text {
+  font-size: 222px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+h1 {
+  color: blue;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.myButton1 {
+  background-color:#44c767;
+  padding: 100px 77px;
+  /* background-image: url("https://lh3.googleusercontent.com/MBEGtkITtoJ1-euCR9Tci-PQ-gOABNFoRvxRrgHpzBxaSPMPnF-L7vDNRGMHMdToQ3ErzqexFpxxquPXffcOJ-H1Sp8ccZY6xrK-dtO1SbwyYAdUkT4BoGgeEiCbw-QAZCXQ8O0akGbdMn_nA8Z7iQCsrL6PhfLIdaa3xJbOsiecApYKaLNWZte8V9wsmMtZeoHDNxX2WbFSgJzP48qE-nxCl10vvjgPtsf1fzGzKy-10E9mKpwsPJvwKB07E4-Gun2vU9-DWFRxd8b0q-wS99VV7CVWtl010t2xYIBRSHoyI_0LHwnDLyc4nsb6XLkW5oLCHkC9EjtzGypgM00t7ognwTO1wyg53dr4vCKsz41zsm4tRQaS2OioY3oIhrK2DYv646hc1cG89IICd4syTLOpTZBEEGBK_1wqIdnfVNbTxgRon-cgc5VPLLHpM7tMkhkbFPQJ7vEhczqO82yYElyG8DBxYk6ndLrrCWuM1jO5otRzH8zyGlMfRhTVIn0p096SBdoFnLZzDsslWW6RM__Eldyg_1vvUTFs5WUsyEhNxYPqc2kj0ASa0RfQstrD4_-VUvfM2KQuiKr1sBer1WLJs_xHKcPqtU8sQB1Jtsh8KYOCTFCsHHZcdeX34CWVdubI8cIZqMg05iGRjb2ejCgiQqargx0dZKdEOpY5x1ARy0GnFJ9hYI8L-XnUXjCPUVyDpw=w2666-h1434-ft"); */
+  background-repeat: no-repeat;
+  
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dice-image {
+  margin: 10px;
+  
 }
